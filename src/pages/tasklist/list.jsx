@@ -29,7 +29,7 @@ export const List = (params) => {
 
   const removeTask = () => {
     setList('');
-    console.debug('Remoção de lista');
+    console.debug('Revoving the list');
   };
 
   const requestData = async () => {
@@ -87,7 +87,7 @@ export const List = (params) => {
                     }}
                   >
                     <Row>
-                      <Col sm="9">{check ? 'Desmarcar' : 'Concluír'}</Col>
+                      <Col sm="9">{check ? 'Uncheck' : 'Check'}</Col>
                       <Col sm="2">
                         <i className="bx bx-list-check"></i>
                       </Col>
@@ -99,7 +99,7 @@ export const List = (params) => {
                     }}
                   >
                     <Row>
-                      <Col sm="9">Excluír</Col>
+                      <Col sm="9">Remove</Col>
                       <Col sm="2">
                         <i className="bx bxs-trash"></i>
                       </Col>
@@ -111,7 +111,7 @@ export const List = (params) => {
                     }}
                   >
                     <Row>
-                      <Col sm="9">Compartilhar</Col>
+                      <Col sm="9">Share</Col>
                       <Col sm="2">
                         <i className="bx bxs-share-alt"></i>
                       </Col>

@@ -15,7 +15,7 @@ export default function TaskList() {
 
   const addTask = () => {
     if (!task) {
-      alert('Por favor preencha uma tarefa');
+      alert('Please write a task');
       setTask('');
     } else {
       const newTask = {
@@ -43,7 +43,7 @@ export default function TaskList() {
             value={task}
             width="100%"
             onChange={(e) => setTask(e.target.value)}
-            placeholder="Digite sua tarefa"
+            placeholder="Write a task"
             onKeyDown={() => enterClick(event.key)}
           />
           <Button

@@ -26,7 +26,7 @@ export default function Item(params) {
   };
 
   const handleSaveTask = () => {
-    console.debug(`Salvando a tarefa ${task}`);
+    console.debug(`Saving task: ${task}`);
   };
 
   const handleCheck = () => {
@@ -44,7 +44,7 @@ export default function Item(params) {
         value={task}
         width="100%"
         onChange={(e) => handleValue(e.target.value)}
-        placeholder="Digite sua tarefa"
+        placeholder="Write your task"
         onKeyDown={() => enterClick(event.key)}
       />
       <BtnBoot
