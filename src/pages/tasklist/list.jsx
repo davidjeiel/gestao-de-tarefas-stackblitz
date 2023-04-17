@@ -4,7 +4,7 @@ import {
   Col,
   Collapse,
   ListGroup,
-  Button as BtnBoot,
+  Button,
   Row,
   Dropdown,
   DropdownButton,
@@ -16,7 +16,6 @@ import Item from './item';
 export const List = (params) => {
   const [open, setOpen] = useState(false);
   const [check, setCheck] = useState({});
-
   const [list, setList] = useState({});
 
   const handleItem = (id) => {
@@ -67,7 +66,7 @@ export const List = (params) => {
         <Card
           key={'lista-' + params.id}
           className={
-            check === false
+            check === 'false'
               ? 'bg-white m-2'
               : 'bg-dark text-light opacity-75 text-decoration-line-through m-2'
           }
@@ -125,7 +124,7 @@ export const List = (params) => {
 
               <Col md="2" className="ml-2 mr-2" style={{ marginLeft: '1%' }}>
                 <ButtonGroup>
-                  <BtnBoot
+                  <Button
                     type="button"
                     variant="outline-secondary"
                     size="sm"
@@ -136,8 +135,8 @@ export const List = (params) => {
                     aria-controls={'lista-' + params.id}
                   >
                     <i className="bx bx-plus"></i>
-                  </BtnBoot>
-                  <BtnBoot
+                  </Button>
+                  <Button
                     type="button"
                     variant="outline-secondary"
                     size="sm"
@@ -152,7 +151,7 @@ export const List = (params) => {
                     ) : (
                       <i className="bx bx-chevron-up"></i>
                     )}
-                  </BtnBoot>
+                  </Button>
                 </ButtonGroup>
               </Col>
             </Row>

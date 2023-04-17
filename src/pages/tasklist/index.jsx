@@ -1,10 +1,4 @@
-import {
-  Button,
-  Container as ContainerStyled,
-  Input,
-  Flex,
-  BlurCard,
-} from '../../styles';
+import {Button,Input,Flex,BlurCard} from '../../styles';
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { List } from './list';
