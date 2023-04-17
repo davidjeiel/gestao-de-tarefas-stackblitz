@@ -1,17 +1,9 @@
-import {
-  Col,
-  FormControl,
-  InputGroup,
-  ListGroup,
-  ListGroupItem,
-  Row,
-  Button as BtnBoot,
-} from 'react-bootstrap';
-import { Button, Input, OcultInput } from '../../styles';
+import { FormControl, InputGroup, Button } from 'react-bootstrap';
+import { Button } from '../../styles';
 import React, { useState } from 'react';
 
 export default function Item(params) {
-  const [task, setTask] = useState();
+  const [task,  setTask ] = useState();
   const [check, setCheck] = useState(false);
 
   const handleValue = (insert) => {
@@ -47,14 +39,9 @@ export default function Item(params) {
         placeholder="Write your task"
         onKeyDown={() => enterClick(event.key)}
       />
-      <BtnBoot
-        size="sm"
-        variant="secondary"
-        style={{ marginTop: '3%' }}
-        onClick={() => handleSaveTask()}
-      >
+      <Button size="sm" variant="secondary" onClick={() => handleSaveTask()}>
         <i className="bx bxs-send"></i>
-      </BtnBoot>
+      </Button>
     </InputGroup>
   );
 }
